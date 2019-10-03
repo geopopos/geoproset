@@ -22,3 +22,12 @@ def main(directory, root, project_name):
         root_module = '{}{}/'.format(project_directory, project_name)
         click.echo('Renaming root module: {}'.format(project_name))
     shutil.move(initial_module, root_module)
+    # Rename the tests file
+    initial_test = '{}tests/NAME_test.py'.format(project_directory)
+    if root:
+        module_test = '{}tests/{}_test.py'.format(project_directory, root)
+        click.echo('Renaming {} to {}'.format(initial_test, module_test))
+    else:
+        module_test = '{}tests/{}_test.py'.format(project_directory, project_name)
+        click.echo('Renaming {} to {}'.format(initial_test, module_test))
+    os.rename(initial_test, module_test)
