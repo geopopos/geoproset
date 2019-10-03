@@ -1,0 +1,7 @@
+setup.py
+geoproset.egg-info/PKG-INFO
+geoproset.egg-info/SOURCES.txt
+geoproset.egg-info/dependency_links.txt
+geoproset.egg-info/entry_points.txt
+geoproset.egg-info/requires.txt
+geoproset.egg-info/top_level.txt
