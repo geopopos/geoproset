@@ -1,19 +1,10 @@
+import json
 try:
     from setuptools import setup
 except ImportError:
     from disutils.core import setup
 
-config = {
-    'description': 'My Project',
-    'author': 'Georgios Roros',
-    'url': 'URL to get it at.',
-    'download_url': 'Where to download it.',
-    'author_email': 'george@georgiosroros.com',
-    'version': '0.1',
-    'install_requires': ['nose'],
-    'packages': ['NAME'],
-    'scripts': [],
-    'name': 'projectname'
-}
+with open("config.json", "r") as read_file:
+    config = json.load(read_file)
 
 setup(**config)
