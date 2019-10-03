@@ -5,3 +5,6 @@
    [x] update setup.py to read from config.json
    [x] update geoproset to read and modify config.json
    [] update tests/NAME_test.py to import correct package
+[] add option to change author
+[] add option to change emai
+
