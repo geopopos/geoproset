@@ -1,10 +1,10 @@
 [x] rename tests file
-[] edit setup.py automatically
+[x] edit setup.py automatically
    - to accomplish this create a config.json file that can be edited by the
      geoproset cli, and accessed by setup.py
    [x] update setup.py to read from config.json
    [x] update geoproset to read and modify config.json
-   [] update tests/NAME_test.py to import correct package
-[] add option to change author
-[] add option to change emai
+   [x] update tests/NAME_test.py to import correct package
+[x] add option to change author
+[x] add option to change emai
 
